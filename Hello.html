@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SIGN</title>
+	<script type="text/javascript" src="Hello.js" > 
+	</script>
+</head>
+<body>
+ 
+  <div id="signin">
+  	<div class="image" style="padding-left: 300px; padding-top: 100px">
+		<div style="border: 24px solid red; width: 400px">  	
+  <table>
+  	<tr>
+  		<td>
+  			<label>USER ID</label><input type="text" id="userid" >
+        <p style=" padding-left: 110px; color:blue; font-size:11px" id="msg1" ></p>
+  		</td>
+  	</tr>
+    
+  	<tr>
+  		<td>
+  			<label>PASSWORD</label><input type="password" id="password" >
+         <p style="padding-left: 110px; color:blue; font-size:11px" id="msg2"></p>
+  		</td>
+  	</tr>
+    
+  	<tr>
+  		<td colspan="4" style="padding-left: 150px">
+  		   <input type="submit" name="submit" value="Submit" onclick="userValidation()">
+  		</td>
+  	</tr>
+  	<tr>
+  		<td style="padding-left: 300px">
+  			 <a  onclick="visibilityChanger('signup');">SIGNUP</a>
+  		</td>
+  	</tr>
+  	<tr>
+  		<td style="padding-left: 300px">
+  			  <a  onclick="visibilityChanger('contact');">CONTACT</a>
+  		</td>
+  	</tr>
+  </table>
+  
+  </div>
+</div>
+  </div>
+  <div id="signup" style="display: none;">
+  	<div  style="padding-left: 300px; padding-top: 100px"> 
+  <div style="border: 24px solid red; width: 400px"> 
+  <table>
+  <tr>
+    <td>
+      <label>USERNAME</label><input type="text"  id="susername">
+      <p style="padding-left: 110px; color:blue; font-size:11px" id="msg3" ></p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label>EMAIL</label><input type="text"  id="semail">
+      <p style="padding-left: 110px; color:blue; font-size:11px" id="msg4" ></p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label>PASSWORD</label><input type="password" id="spassword" >
+      <p style=" padding-left: 110px; color:red; font-size:11px" id="msg5" ></p>
+    </td>
+</tr>
+   <tr>
+    <td style="padding-left: 150px">
+    <input type="submit"  value="signup" onclick="register()">
+  </td>
+   </tr>
+   <tr>
+  		<td style="padding-left: 300px">
+  			 <a  onclick="visibilityChanger('signin');">SIGNIN</a>
+  		</td>
+  	</tr>
+  </table>
+  
+  </div>
+</div>
+  </div>
+  <div id="contact" style="display: none;">
+  	<div  style="padding-left: 300px; padding-top: 100px">
+	<div  style="border: 24px solid red; width: 400px">
+	
+	<table>
+ 	<tr>
+ 		<td>
+ 			<label>NAME</label><input type="text"  id="cusername" >
+ 			<p style="padding-left: 110px; color:blue; font-size:11px" id="msg6" ></p>
+ 		</td>
+ 	</tr>
+ 	<tr>
+ 		<td>
+ 			<label>EMAIL</label><input type="text"  id="cemail">
+ 			<p style="padding-left: 110px; color:blue; font-size:11px" id="msg7" ></p>
+ 		</td>
+ 	</tr>
+ 	<tr>
+ 		<td>
+ 			<label>PHONE</label><input type="text"  id="cphone">
+ 			<p style="padding-left: 110px; color:blue; font-size:11px" id="msg8" ></p>
+ 		</td>
+ 	</tr>
+ 	<tr>
+ 		<td>
+ 			<label>QUESTION</label>
+ 			<textarea rows="10" cols="30" id="cquestion"> </textarea>
+ 			<p style="padding-left: 110px; color:blue; font-size:11px" id="msg9" ></p>
+ 		</td>
+ 	</tr>
+ 	<tr>
+ 		<td style="padding-left: 150px">
+ 			<input type="button" value="send" name="send" onclick="usercontact()">
+ 		</td>
+ 	</tr>
+ 	 <tr>
+  		<td style="padding-left: 300px">
+  			 <a  onclick="visibiltyChanger('signin');">SIGNIN</a>
+  		</td>
+  	</tr>
+ </table>
+</div>
+</div>
+  </div> 
+</body>
+</html>
